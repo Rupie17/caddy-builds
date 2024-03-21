@@ -1,3 +1,5 @@
+This is building on the serfriz/caddy-custom-build images provided by serfriz.  I wanted to start learning how to create and maintain these images and use other modules for my own use.  
+
 This image is updated automatically by GitHub Actions when a new version of Caddy is released using the official Caddy Docker image and the following modules:
 
 Cloudflare DNS: for Cloudflare DNS-01 ACME validation support | caddy-dns/cloudflare
@@ -16,7 +18,7 @@ Docker Hub docker pull serfriz/caddy-cloudflare-ddns-crowdsec:latest
 GitHub Packages docker pull ghcr.io/serfriz/caddy-cloudflare-ddns-crowdsec:latest
 
 Tags
-The following tags are available for the Rupie17/caddy-cloudflare-ddns-crowdsec-geoip image:
+The following tags are available for the Rupie17/caddy-cf-ddns-crowdsec-geoip image:
 
 latest
 <version> (eg: 2.7.4, including: 2.7, 2, etc.)
