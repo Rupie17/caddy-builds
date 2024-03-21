@@ -17,10 +17,9 @@ Since this image built off the official Caddy Docker image, the same volumes and
 Additional environment variables may be needed for the added modules. Please, refer to the repository's README file for further usage instructions.
 
 
-## Docker builds for all Caddy supported platforms available at the following container registries:
+## Docker builds available at the following container registries:
 
-- **Docker Hub** docker pull Rupie17/caddy-cloudflare-ddns-crowdsec:latest 
-- **GitHub Packages** docker pull ghcr.io/serfriz/caddy-cloudflare-ddns-crowdsec:latest
+- **Docker Hub** docker pull Rupie17/caddy-cf-ddns-crowdsec-geoip:latest 
 
 
 ## **Tags** 
