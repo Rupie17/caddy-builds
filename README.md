@@ -19,7 +19,7 @@ Additional environment variables may be needed for the added modules. Please, re
 
 ## Docker builds available at the following container registries:
 
-- **Docker Hub** docker pull Rupie17/caddy-cf-ddns-csec-geoip:latest 
+- **Docker Hub** docker pull rupes17/caddy-cf-ddns-csec-geoip:latest 
 
 
 ## **Tags** 
