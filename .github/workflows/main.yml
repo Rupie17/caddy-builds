@@ -1,17 +1,9 @@
 name: Deploy
 
 on:
-  workflow_dispatch:
   push:
     branches: 
       - main # Set a branch to deploy when pushed
-    paths:
-      - caddy-cf-ddns-csec-geoip/Dockerfile
-
-env:
-  DOCKER_BUILDKIT: 1
-  DOCKER_NAME: caddy-cf-ddns-csec-geoip
-  DOCKER_DESCRIPTION: "Caddy Docker custom build with Cloudflare Dynamic DNS/IPs, CrowdSec Bouncer modules and MaxMind GeoIP"
 
 jobs:
   deploy:
@@ -35,8 +27,5 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: ./${{ env.DOCKER_NAME }}/Dockerfile
           push: true
-          provenance: false
           tags: rupes17/caddy-cf-ddns-csec-geoip:latest
